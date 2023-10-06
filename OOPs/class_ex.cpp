@@ -37,6 +37,8 @@ int main(){
 
     cout<<harry_potter->author<<endl;
 
+    story h_p=story(harry_potter); //using copy ctor
+
     // if we create an instance in heap memory (ptrs) we need to deallocte memory_order 
     // (we need to call dtor manually) else it will result in memory flow (leak)
     delete harry_potter;
